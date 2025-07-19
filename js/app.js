@@ -1,3 +1,27 @@
+// 1.   1 dan 77 gacha o'ylagan sonimni topish
+
+let javob = "";
+let taxmin;
+
+while (javob !== "ha") {
+  taxmin = Math.floor(Math.random() * 77);
+
+  javob = prompt(`Siz ${taxmin} sonini o‘ylagansizmi? (ha/yo‘q)`);
+
+  if (javob === null || javob === "") {
+    alert("Iltimos, ha yoki yo‘q deb javob bering.");
+  } else if (javob === "yo`q" || javob === "yoq" || javob === "yo'q") {
+    console.log(`Yana bir bor urinib ko'raman`);
+  } else if (javob === "ha") {
+    alert(`Men siz o‘ylagan ${taxmin} sonini topdim!`);
+  } else {
+    alert("Faqat 'ha' yoki 'yo‘q' deb javob bering.");
+  }
+}
+
+
+
+
 // 2.1    Math.floor, Math.ceil, Math.round yordamida yaxlitlash
 
 
