@@ -17,6 +17,15 @@ let result = Math.floor(Math.random()*10)+1;
 console.log("0 dan 10 gacha random natija: ", result);
 
 
+// 2.3    null va undefined farqi
+
+let z = null;
+let x = undefined;
+
+console.log(z);
+console.log(x);
+
+
 // 2.4   while yordamida 10 ta 0 va 100 oralig'ida son chiqarish
 
 
@@ -39,10 +48,10 @@ console.log(Math.pow(number1, 2));
 // 2.6   1 dan 20 gacha toq sonlarni chiqarish
 
 
-let s=1
+let s=1;
 while(s<20){
     console.log(s);
-    s+=1
+    s+=2
 
 }
 
@@ -114,8 +123,25 @@ else if (num5 > num1 && num5 > num2 && num5 > num3 && num5 > num4) {
 }
 else{
   console.log("!");
-  
+
 }
+
+
+
+// 2.10     undefined yoki null ni qabul qilmasdan boshqa so'rash ?? bilan
+
+
+
+let numx = (prompt("Son kiriting: "));
+
+if (numx === null || numx === "") {
+  console.log("Boshqa kiriting!");
+
+} else {
+  console.log("to'g'ri");
+
+}
+
 
 
 
